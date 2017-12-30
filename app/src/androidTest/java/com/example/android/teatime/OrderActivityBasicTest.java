@@ -28,12 +28,9 @@ import org.junit.runner.RunWith;
 @RunWith(AndroidJUnit4.class)
 public class OrderActivityBasicTest {
 
-    // TODO (2) Add the rule that provides functional testing of a single activity
-
-    // TODO (3) Finish writing this test which will:
-    //          - Check that the initial quantity is zero
-    //          - Click on the decrement button
-    //          - Verify that the decrement button won't decrease the quantity 0 and cost below $0.00
+    @Rule
+    public ActivityTestRule<OrderActivity> mActivityTestRule =
+            new ActivityTestRule<>(OrderActivity.class);
 
     public void clickDecrementButton_ChangesQuantityAndCost() {
     }

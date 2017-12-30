@@ -32,6 +32,7 @@ public class OrderActivityBasicTest {
     public ActivityTestRule<OrderActivity> mActivityTestRule =
             new ActivityTestRule<>(OrderActivity.class);
 
+    @Test
     public void clickDecrementButton_ChangesQuantityAndCost() {
     }
 }

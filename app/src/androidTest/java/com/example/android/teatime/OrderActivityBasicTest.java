@@ -34,5 +34,12 @@ public class OrderActivityBasicTest {
 
     @Test
     public void clickDecrementButton_ChangesQuantityAndCost() {
+        // Check the initial quantity variable is zero
+        onView((withId(R.id.quantity_text_view))).check(matches(withText("0")));
+
+        // Click on decrement button
+        onView((withId(R.id.decrement_button)))
+                .perform(click());
+
     }
 }
